@@ -9,7 +9,7 @@ def mostrar_datos(opcion):
         posts = obtener_post.obtener_posts_api()
 
         # Mostrar los datos de las publicaciones
-        print("\n--- Publicaciones ---")
+        print("\n-POSTS:")
         for post in posts:
             print(f"ID: {post['id']}")
             print(f"ID usuario: {post['userId']}")
@@ -22,7 +22,7 @@ def mostrar_datos(opcion):
         usuarios = obtener_usuarios_api()
 
         # Mostrar los datos de los usuarios
-        print("\n--- Usuarios ---")
+        print("\n-USERS:")
         for usuario in usuarios:
             print(f"ID: {usuario['id']}")
             print(f"Nombre: {usuario['name']}")
@@ -33,7 +33,7 @@ def mostrar_datos(opcion):
             print("-" * 20)
 
     elif opcion == '3':
-        encriptar_texto()  # Llamamos a la función de encriptación
+        encriptar_texto() 
 
     elif opcion == '4':
         print("Saliendo..")
