@@ -8,7 +8,7 @@ def mostrar_datos(opcion):
         # Obtener los datos de la API de posts
         posts = obtener_post.obtener_posts_api()
 
-        # Mostrar los datos de las publicaciones
+        # Mostrar los datos de los posts
         print("\n-POSTS:")
         for post in posts:
             print(f"ID: {post['id']}")
@@ -18,10 +18,10 @@ def mostrar_datos(opcion):
             print("-" * 20)
 
     elif opcion == '2':
-        # Obtener los datos de la API de usuarios
+        # Obtener los datos de la API de users
         usuarios = obtener_usuarios_api()
 
-        # Mostrar los datos de los usuarios
+        # Mostrar los datos de los users
         print("\n-USERS:")
         for usuario in usuarios:
             print(f"ID: {usuario['id']}")
@@ -41,7 +41,7 @@ def mostrar_datos(opcion):
 
     else:
         print("Opción inválida.")
-
+#menu para ver los datos y encriptar
 while True:
     opcion = input(
         '''
