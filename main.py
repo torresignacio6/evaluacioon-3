@@ -32,13 +32,12 @@ def mostrar_datos(opcion):
             print(f"Sitio web: {usuario['website']}")
             print("-" * 20)
 
-
     elif opcion == '3':
+        encriptar_texto()  # Llamamos a la función de encriptación
+
+    elif opcion == '4':
         print("Saliendo..")
         exit()
-        
-    elif opcion == '4':
-        encriptar_texto()  # Llamamos a la función de encriptación
 
     else:
         print("Opción inválida.")
@@ -48,8 +47,8 @@ while True:
         '''
         (-Presione 1) Para mostrar los POST 
         (-Presione 2) Para mostrar los USERS
-        (-Presione 3) Para salir
-        (-Presione 4) Para encriptar un texto 
+        (-Presione 3) Para encriptar un texto 
+        (-Presione 4) Para salir
         '''
     )
     mostrar_datos(opcion)
